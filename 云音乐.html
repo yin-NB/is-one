@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>FreeMusic-在线免费下载音乐</title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			body{
+				background: #191919;
+			}
+			.logo{
+				margin: 20px;
+				font-size: 20px;
+				width: 125px;
+				color: #829194;
+			}
+			.logo:hover{
+				color: #FFFFFF;
+				cursor: pointer;
+			}
+			.an{
+				width: 800px;
+				height: 55px;
+				margin: 15px 0 15px 0;
+			}
+			.an span{
+			border: 1px rgba(255,255,255,0) solid;
+			transition: 1s;
+			border-radius: 2px;
+			margin-left: 25px;
+			font-size: 15px;
+			padding: 5px;
+			cursor: pointer;
+			color: #E4E3E6;
+			}
+			.an span:hover{
+				border: 1px rgba(255,255,255,1) solid;
+				color: #FFFFFF;
+			}
+			.an a{
+			border: 1px rgba(255,255,255,0) solid;
+			transition: .5s;
+			border-radius: 2px;
+			margin-left: 25px;
+			font-size: 15px;
+			padding: 5px;
+			cursor: pointer;
+			color: #E4E3E6;
+			}
+			.an a:hover{
+				border: 1px rgba(255,255,255,1) solid;
+				color: RGB(49,194,124);
+			}
+			.ming{
+				width: 864px;
+				color: rgba(225,225,225,.8);
+				font-size: 14px;
+				border-bottom: 1px solid rgba(255,255,255,.1);
+				height: 50px;
+				line-height: 50px;
+				position: relative;
+			}
+			.centers{
+				width: 1200px;
+				margin: auto;
+				position: relative;
+			}
+			.dixia{
+				height: 100px;
+				position: relative;
+			}
+			.nbu{
+				width: 30px;
+				height: 30px;
+				border: #6B6B6B 1px solid;
+				position: absolute;
+				top: 10px;
+				left: 400px;
+				border-radius: 30px;
+				display: none;
+				font-size: 21px;
+				line-height: 28px;
+				text-align: center;
+				padding-left: 3px;
+			}
+			.nbu2{
+				width: 30px;
+				height: 30px;
+				border: #6B6B6B 1px solid;
+				position: absolute;
+				top: 10px;
+				left: 440px;
+				border-radius: 30px;
+				display: none;
+			}
+			.nbu3{
+				width: 30px;
+				height: 30px;
+				border: #6B6B6B 1px solid;
+				position: absolute;
+				top: 10px;
+				left: 480px;
+				border-radius: 30px;
+				display: none;
+			}
+			
+			.mzi:hover .nbu{
+				display: block;
+				
+			}
+			.mzi:hover .nbu2{
+				display: block;
+			}
+			.mzi:hover .nbu3{
+				display: block;
+			}
+			.nbu:hover{border: #FFFFFF 1px solid;color: #ffff;}
+			.nbu2:hover{border: #FFFFFF 1px solid;}
+			.nbu3:hover{border: #FFFFFF 1px solid;}
+			.dage{
+				width: 1000px;
+				margin-top: 30px;
+				margin-left: 50px;
+			}
+			.nextw{
+				height: 40px;
+				position: relative;
+				color:#CDCDCD ;
+				top: -12px;
+				left: 50px;
+				background: #191919;
+				border: #191919 1px solid;
+				font-size: 25px;
+			}
+			.next{
+				font-size: 25px;
+				height: 40px;
+				position: relative;
+				top: -12px;
+				left: 50px;
+				background: #191919;
+				color:#CDCDCD ;
+				border: #191919 1px solid;
+			}
+			
+			.replay{
+				height: 40px;
+				position: relative;
+				top: -15px;
+				left: 50px;
+				background: #191919;
+				color:#CDCDCD ;
+				border: #191919 1px solid;
+			}
+			.tu{
+				position: absolute;
+				
+				top: 70px;
+				right: 140px;	
+			}
+			.tu img{
+				width: 186px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+		    <div class="logo">
+		        <span>♫ FreeMusic</span>
+		    </div>
+		</div>
+		<div class="center">
+			<div class="centers">
+				<div class="an">
+					<span class="btn">正在播放</span>
+					<span class="btn">播放列表</span>
+					<span class="btn">歌曲搜索</span>
+					<a class="btn">淘宝优惠券</a>
+				</div>
+				<div class="gequ">
+					<div class="ming">
+						<span style="margin-left: 40px;margin-right:400px;">歌曲</span>
+						<span style="margin: 0 80px;">歌手</span>
+						<span style="margin-left: 50px;">专辑</span>
+					</div>
+					
+					<div class="mzi">
+						<div class="ming">
+							<span style="margin-left: 20px;">1</span>
+							<span style="margin-left: 10px;margin-right: 311px;">会不会（吉他版）</span>
+							<span style="margin: 0 80px;">刘大壮</span>
+							<span style="margin-left: 37px;">会不会</span>
+							<div class="nbu">▶</div>
+							<div class="nbu2"></div>
+							<div class="nbu3"></div>
+						</div>
+					</div>
+					
+					<div class="mzi">
+					<div class="ming">
+						<span style="margin-left: 20px;">2</span>
+						<span style="margin-left: 10px;margin-right: 352px;">是但求其爱</span>
+						<span style="margin: 0 80px;">陈奕迅</span>
+						<span style="margin-left: 38px;">是但求其爱</span>
+						<div class="nbu">▶</div>
+						<div class="nbu2"></div>
+						<div class="nbu3"></div>
+					</div>
+					</div>
+					<div class="mzi">
+					<div class="ming">
+						<span style="margin-left: 20px;">3</span>
+						<span style="margin-left: 10px;margin-right: 310px;">我很好（吉他版）</span>
+						<span style="margin: 0 80px;">刘大壮</span>
+						<span style="margin-left: 36px;">我很好（吉他版）</span>
+						<div class="nbu">▶</div>
+						<div class="nbu2"></div>
+						<div class="nbu3"></div>
+					</div>
+					</div>
+					<div class="mzi">
+					<div class="ming">
+						<span style="margin-left: 20px;">4</span>
+						<span style="margin-left: 10px;margin-right: 394px;">海底</span>
+						<span style="margin: 0 80px;">一支榴莲</span>
+						<span style="margin-left: 19px;">《独》</span>
+						<div class="nbu">▶</div>
+						<div class="nbu2"></div>
+						<div class="nbu3"></div>
+					</div>
+					</div>
+					<div class="mzi">
+					<div class="ming">
+						<span style="margin-left: 20px;">5</span>
+						<span style="margin-left: 10px;margin-right: 366px;">执迷不悟</span>
+						<span style="margin: 0 80px;">鱿籽酱</span>
+						<span style="margin-left: 38px;">执迷不悟</span>
+						<div class="nbu">▶</div>
+						<div class="nbu2"></div>
+						<div class="nbu3"></div>
+					</div>
+					</div>
+					<div class="mzi">
+					<div class="ming">
+						<span style="margin-left: 20px;">6</span>
+						<span style="margin-left: 10px;margin-right: 353px;">他只是经过</span>
+						<span style="margin: 0 80px;">h3R3</span>
+						<span style="margin-left: 45px;">他只是经过</span>
+						<div class="nbu">▶</div>
+						<div class="nbu2"></div>
+						<div class="nbu3"></div>
+					</div>
+					</div>
+					<div class="mzi">
+					<div class="ming">
+						<span style="margin-left: 20px;">7</span>
+						<span style="margin-left: 10px;margin-right: 308px;">三号线（吉他版）</span>
+						<span style="margin: 0 80px;">刘大壮</span>
+						<span style="margin-left: 42px;">三号线</span>
+						<div class="nbu">▶</div>
+						<div class="nbu2"></div>
+						<div class="nbu3"></div>
+					</div>
+					</div>
+					<div class="mzi">
+					<div class="ming">
+						<span style="margin-left: 20px;">8</span>
+						<span style="margin-left: 10px;margin-right: 338px;">经济舱 (Live)</span>
+						<span style="margin: 0 80px;">Kafe.Hu</span>
+						<span style="margin-left: 32px;">中国新说唱2020 第十期</span>
+						<div class="nbu">▶</div>
+						<div class="nbu2"></div>
+						<div class="nbu3"></div>
+					</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="tu">
+				<img src="../img/player_cover.png" >
+			</div>
+		</div>
+		<div class="dixia">
+			<button class="nextw">◄◄</button>
+			<button class="replay">重新播放</button>
+			<button class="next">►►</button>
+			<audio class="dage" src="云音乐_files/会不会.mp3" controls  preload="metadata"></audio>
+		</div>
+</body>	
+</html>
+<script type="text/javascript">
+	let ms = ['会不会.mp3',"是但求其爱.mp3","我很好.mp3","海底.mp3","执迷不悟.mp3","他只是经过.mp3","三号线.mp3","经济舱.mp3",];
+	let index = 0;
+	let next = document.querySelector(".next");
+	let dage = document.querySelector(".dage");
+	let nextw = document.querySelector(".nextw");
+	
+	nextw.onclick=playa;
+	function playa(){
+		dage.src="云音乐_files/"+ms[--index]
+		dage.play();
+	}
+	
+	next.onclick=playMu;
+	
+	function playMu(){
+		dage.src="云音乐_files/"+ms[++index]
+		dage.play();
+	}
+	
+	
+	let rep = document.querySelector(".replay");
+	rep.onclick=function(){
+		dage.load();
+		dage.play();
+	}
+	function fang(){
+		
+		dage.play();
+	}
+	let mzi=document.querySelectorAll('.mzi');
+	let nbu=document.querySelectorAll('.nbu');
+	for(let s=0;s<mzi.length;s++)
+		nbu[s].onclick=function playaa(){
+		for(let m=0;m<nbu.length;m++){
+			dage.src="云音乐_files/"+ms[m];
+			dage.play();
+			}
+		}
+		
+</script>
